@@ -5,7 +5,7 @@ date_default_timezone_set("America/Fortaleza");
 //LOCALHOST//
 if($_SERVER['HTTP_HOST']=='localhost' || $_SERVER['HTTP_HOST']=='127.0.0.1'){	
 	
-	define("PATH", 'http://'.$_SERVER['HTTP_HOST'].'/ugo2/');
+	define("PATH", 'http://'.$_SERVER['HTTP_HOST'].'/UGOFINAL/');
 
 	ini_set("display_errors", "1");
 	ini_set("display_errors", "On");	

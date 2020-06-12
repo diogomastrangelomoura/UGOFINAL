@@ -7,7 +7,7 @@ $sel = $db->select("SELECT plano_de_acao.*, respostas_checklists.indicador, resp
   LEFT JOIN respostas_checklists ON respostas_checklists.id_plano=plano_de_acao.id_plano 
   LEFT JOIN realizados ON realizados.id_realizado=respostas_checklists.id_realizado 
   LEFT JOIN usuarios ON realizados.id_usuario=usuarios.id_usuario 
-  LEFT JOIN tipo_status ON plano_de_acao.status=tipo_status.id_status 
+  LEFT JOIN tipo_status ON plano_de_acao.linka_status=tipo_status.id_status 
   WHERE plano_de_acao.id_plano='$id' 
   LIMIT 1");
 $line = $db->expand($sel);
@@ -17,8 +17,22 @@ $line = $db->expand($sel);
 	<div class="col-md-12">
 
 		<div class="card m-b-20 card-body">
+
+
+      <div class="row">
+        <div class="col-md-11">
+          <h4 class="mt-0 h4_topo_exibe"><?php echo $line['indicador']; ?></h4>
+        </div>
+
+        <div class="col-md-1">
+        <a href="edita-plano-acao/<?php echo $id_objeto; ?>/<?php echo normaliza($line['nome']); ?>" data-toggle="tooltip" data-placement="bottom" title="Editar plano de ação" type="button" class="btn btn-ugo btn-divisor waves-light waves-effect"><i class="mdi mdi-border-color"></i></a>
+        </div>
+      </div>
+
+
+    
       			
-      <h4 class="mt-0 h4_topo_exibe"><?php echo $line['indicador']; ?></h4> 
+       
         <div class="row">
 
           <div class="col-md-6">

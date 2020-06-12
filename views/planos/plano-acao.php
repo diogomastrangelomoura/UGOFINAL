@@ -30,7 +30,7 @@
 
     <div class="row">
         <?php
-        $sel = $db->select("SELECT plano_de_acao.status, plano_de_acao.id_plano, respostas_checklists.indicador, realizados.id_usuario, usuarios.nome, tipo_status.nome_status, tipo_status.color FROM plano_de_acao INNER JOIN respostas_checklists ON plano_de_acao.id_plano = respostas_checklists.id_plano INNER JOIN realizados ON respostas_checklists.id_realizado = realizados.id_realizado INNER JOIN usuarios ON realizados.id_usuario = usuarios.id_usuario INNER JOIN tipo_status ON tipo_status.id_status=plano_de_acao.status WHERE realizados.id_unidade = 3");
+        $sel = $db->select("SELECT plano_de_acao.linka_status, plano_de_acao.id_plano, respostas_checklists.indicador, realizados.id_usuario, usuarios.nome, tipo_status.nome_status, tipo_status.color FROM plano_de_acao INNER JOIN respostas_checklists ON plano_de_acao.id_plano = respostas_checklists.id_plano INNER JOIN realizados ON respostas_checklists.id_realizado = realizados.id_realizado INNER JOIN usuarios ON realizados.id_usuario = usuarios.id_usuario INNER JOIN tipo_status ON tipo_status.id_status=plano_de_acao.linka_status WHERE realizados.id_unidade = 3");
         if ($db->rows($sel)) {
             while ($line = $db->expand($sel)) {
         ?>

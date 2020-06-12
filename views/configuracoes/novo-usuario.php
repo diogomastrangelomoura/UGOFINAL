@@ -133,9 +133,4 @@ if(isset($id)){
 </div>
 
 
-
-
-
-
-
 <?php require ("../../includes/rodape.php"); ?>
