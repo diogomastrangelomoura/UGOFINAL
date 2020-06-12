@@ -1,0 +1,19 @@
+@media print {
+
+.cabecalho-impressao img{max-width: 100% !important; margin-bottom: 20px !important}
+.show-only-print{display: block;}
+.hide-print{display: none;}
+
+button{display: none;}
+.btn{display: none;}
+.card-body{padding: 0}
+
+
+input{border: 0 !important; padding: 0 !important; padding-left: 0 !important; padding-top: 0 !important; border-bottom: 1px solid #e1e1e1 !important}
+.page-content-wrapper{padding-top: 10px !important}
+
+a.botao-tres-pontos{display: none;}
+h4.h4_topo_exibe{margin-bottom: 0}
+h6{margin-top: 0}
+
+}

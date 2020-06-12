@@ -1,0 +1,3 @@
+[25-Mar-2020 10:08:55 America/Fortaleza] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/sistecno/public_html/ugo/class/class.db.php on line 7
+[25-Mar-2020 10:08:55 America/Fortaleza] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/sistecno/public_html/ugo/class/class.db.php on line 7
+[25-Mar-2020 10:08:55 America/Fortaleza] PHP Warning:  mysqli_set_charset(): Couldn't fetch mysqli in /home/sistecno/public_html/ugo/class/class.db.php on line 8

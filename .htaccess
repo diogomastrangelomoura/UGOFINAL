@@ -1,0 +1,89 @@
+<IfModule mod_rewrite.c>
+    
+	#Bloquear listagem
+	Options -Indexes
+	RewriteEngine on
+
+	DefaultLanguage pt-BR
+	AddDefaultCharset UTF-8
+
+	
+
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+
+
+	
+
+	#PAGES**************************************************************
+
+	RewriteRule ^logout?$ controlers/login/logout.php [L,QSA]
+	RewriteRule ^acesso?$ index.php [L,QSA]
+	RewriteRule ^home?$ views/home/home.php [L,QSA]
+	RewriteRule ^recovery-pass?$ views/login/esqueci-senha.php [L,QSA]
+
+	RewriteRule ^unidades-empresas?$ views/unidades/unidades-empresas.php [L,QSA]
+	RewriteRule ^nova-unidade-empresa?$ views/unidades/nova-unidade-empresa.php [L,QSA]
+	RewriteRule ^edita-unidade/(.*)/(.*)?$ views/unidades/nova-unidade-empresa.php?id=$1 [L,QSA]
+
+
+	RewriteRule ^config-formularios?$ views/configuracoes/config-cadastros.php [L,QSA]
+	RewriteRule ^config?$ views/configuracoes/config.php [L,QSA]
+	RewriteRule ^config-novo-formulario?$ views/configuracoes/config-novo-cadastro.php [L,QSA]
+	RewriteRule ^edita-formulario/(.*)/(.*)?$ views/configuracoes/config-novo-cadastro.php?id=$1 [L,QSA]
+
+	RewriteRule ^config-checklist?$ views/configuracoes/config-checklist.php [L,QSA]
+	RewriteRule ^config-novo-checklist?$ views/configuracoes/config-novo-checklist.php [L,QSA]
+	RewriteRule ^perguntas-novo-checklist/(.*)/(.*)?$ views/configuracoes/perguntas-novo-checklist.php?id=$1 [L,QSA]
+	RewriteRule ^edita-checklist/(.*)/(.*)?$ views/configuracoes/config-novo-checklist.php?id=$1 [L,QSA]
+	RewriteRule ^confere-novo-checklist/(.*)/(.*)?$ views/configuracoes/confere-novo-checklist.php?id=$1 [L,QSA]
+	
+	RewriteRule ^responde-checklist?$ views/checklist/responde-checklist.php [L,QSA]
+	RewriteRule ^verifica-checklist/(.*)?$ views/checklist/verifica-checklist.php?id=$1 [L,QSA]
+	
+
+
+	RewriteRule ^lista-checklist/(.*)/(.*)?$ views/checklist/lista-checklist.php?id=$1 [L,QSA]
+	RewriteRule ^lista-checklist?$ views/checklist/lista-checklist.php [L,QSA]
+
+	RewriteRule ^checklist-objetos/(.*)/(.*)?$ views/configuracoes/checklist-objetos.php?id=$1 [L,QSA]
+
+	RewriteRule ^confere-novo-cadastro/(.*)/(.*)?$ views/configuracoes/confere-novo-cadastro.php?id=$1 [L,QSA]
+	
+
+	RewriteRule ^meus-dados?$ views/login/meus-dados.php [L,QSA]
+	RewriteRule ^usuarios-sistema?$ views/configuracoes/usuarios-sistema.php [L,QSA]
+
+
+	RewriteRule ^novo-usuario?$ views/configuracoes/novo-usuario.php [L,QSA]
+	RewriteRule ^edita-usuario/(.*)/(.*)?$ views/configuracoes/novo-usuario.php?id=$1 [L,QSA]
+	
+	
+	RewriteRule ^lista-cadastros/(.*)/(.*)?$ views/cadastros/lista-cadastros.php?id=$1 [L,QSA]
+
+  RewriteRule ^cadastros?$ views/cadastros/cadastros.php [L,QSA]
+	RewriteRule ^novo-cadastro/(.*)/(.*)?$ views/cadastros/novo-cadastro.php?id=$1 [L,QSA]
+	RewriteRule ^edita-cadastro/(.*)/(.*)/(.*)/(.*)?$ views/cadastros/novo-cadastro.php?id=$1&id_objeto=$3 [L,QSA]
+	RewriteRule ^ficha-objeto/(.*)/(.*)/(.*)/(.*)?$ views/cadastros/novo-cadastro.php?id=$1&id_objeto=$3&exibicao=1 [L,QSA]
+
+
+	RewriteRule ^nova-os?$ views/os/nova-ordem-servico.php [L,QSA]
+	RewriteRule ^nova-os/(.*)/(.*)?$ views/os/nova-ordem-servico.php?id=$1&resposta=$2 [L,QSA]
+	RewriteRule ^nova-ordem/(.*)/(.*)?$ views/os/nova-ordem-servico.php?id_objeto=$1 [L,QSA]
+	RewriteRule ^prioridade-ordem-servico/(.*)?$ views/os/prioridade-ordem-servico.php?id=$1 [L,QSA]
+	
+	RewriteRule ^ordens-servico?$ views/os/lista-os.php [L,QSA]
+
+	RewriteRule ^checklists?$ views/checklist/checklists-existentes.php [L,QSA]
+
+	RewriteRule ^plano-acao?$ views/planos/plano-acao.php [L,QSA]
+	RewriteRule ^detalhe-plano-acao/(.*)/(.*)?$ views/planos/detalhe-plano-acao.php?id=$1 [L,QSA]
+	RewriteRule ^edita-plano-acao/(.*)/(.*)?$ views/planos/edita-plano-acao.php?id=$1 [L,QSA]
+	
+	
+	RewriteRule ^lista-funcoes?$ views/configuracoes/lista-funcoes.php [L,QSA]
+	RewriteRule ^nova-funcao?$ views/configuracoes/nova-funcao.php [L,QSA]
+	RewriteRule ^edita-funcao/(.*)/(.*)?$ views/configuracoes/nova-funcao.php?id=$1 [L,QSA]
+
+</IfModule>
+

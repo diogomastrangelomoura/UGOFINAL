@@ -1,0 +1,275 @@
+.close{font-size: 1.2rem; color: #333}
+label{margin-bottom: 0 !important}
+label.container_checkbox{    margin-bottom: 13px !important;}
+input[switch].apaga_img + label{margin-top: 8px}
+a.color-none{color: inherit !important }
+
+img.img-obj{max-height: 140px !important; max-width: 100%}
+.border-border{border:1px solid #e1e1e1; padding: 10px; border-radius: 8px}
+.border-bottom-card{border-bottom: 4px solid #6f2f9f}
+
+.show-only-print{display: none;}
+
+
+/*label{margin-bottom: 2px !important}*/
+.icon-button{position: absolute; left: 8px; top: 12px}
+.select2-container .select2-selection--single{height: 48px !important; }
+.select2-container .select2-selection--single .select2-selection__rendered{line-height: 46px !important}
+
+.botao-tres-pontos{position: absolute; right: 15px; top: 5px; font-size: 20px; cursor: pointer;}
+
+.btn-ugo {
+  background-color: #6f2f9f;
+  border: 1px solid #6f2f9f;
+  color: #FFF;
+}
+
+a.btn-ugo {
+  background-color: #6f2f9f !important;
+  border: 1px solid #6f2f9f !important;
+  color: #FFF !important;
+}
+
+.btn-ugo-border {
+  background-color: #FFF;
+  border: 1px solid #6f2f9f;
+  color: #6f2f9f
+}
+
+.btn-ugo-border:hover {
+  background-color: #6f2f9f;  
+  color: #FFF
+}
+
+.btn-divisor{border-right: 2px solid #604360 !important}
+a.btn-divisor{border-right: 2px solid #604360 !important}
+
+
+
+.input-group{
+  display: inherit;
+}
+
+.input-group .btn-ugo-border{
+  width: 100%
+}
+
+
+.cursor{cursor: move;}
+.color-hugo{color: #6f2f9f !important}
+.color-black{color: #000 !important}
+
+h4.h4_topo_exibe{margin-bottom: 0 !important; line-height: 40px !important}
+
+.bg-ugo{background-color: #6f2f9f }
+
+input[switch]:checked + label {
+  background-color: #6f2f9f !important; 
+}
+
+input.select-checkbox-all{width: 60px}
+
+.hide{display: none;}
+
+.btn-ugo:hover { color:#FFF}
+
+.font-18{font-size: 18px !important; font-weight: 300}
+.font-30{font-size: 20px !important;}
+.font-40{font-size: 40px !important}
+
+.paddingtop-20{padding-top: 20px}
+.btn-lg{font-weight: 300}
+
+.mbottom-0{margin-bottom: 0px !important;}
+.mbottom-10{margin-bottom: 10px !important;}
+.mbottom-20{margin-bottom: 20px !important;}
+.mbottom-30{margin-bottom: 30px !important;}
+.mbottom-40{margin-bottom: 40px !important;}
+.mbottom-50{margin-bottom: 50px !important;}
+
+
+.dd-handle {min-height: 46px; cursor: default !important;}
+.dd-handle label{margin-bottom: 0; float: left;}
+.dd-handle a{margin-top: -0px; float: left; margin-left: 8px; color: #979898}
+
+.dd{max-width: inherit;}
+
+.custom-dd .dd-list .dd-item .conferencia{background-color: #FFF; cursor: move !important;}
+
+
+.padding-right-0{padding-right: 0}
+
+.btn{font-weight: 300 !important}
+
+.mtop-5{margin-top: 5px !important;}
+.mtop-10{margin-top: 10px !important;}
+.mtop-20{margin-top: 20px !important;}
+.mtop-30{margin-top: 30px !important;}
+.mtop-40{margin-top: 40px !important;}
+.mtop-50{margin-top: 50px !important;}
+
+.padding-5{padding: 5px !important;}
+.padding-10{padding: 10px !important;}
+.padding-20{padding: 20px !important;}
+.padding-30{padding: 30px !important;}
+
+
+/* emilio */
+.sub-titulo{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sub-titulo2{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ajusta-lista {
+  margin-left: -20px;
+}
+
+.linha{
+  width: 100%;
+  height: 0.1px;
+  background-color: #cccccc;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.aumentaBadge{
+  font-size: 14px;
+}
+
+.ajusta{
+  margin-top: 15px;
+}
+
+.ajusta-topo{
+  margin-top: 5px;
+}
+
+.tirarLink{
+  text-decoration:none; 
+  color: #333;
+}
+
+.tirarLink:hover{
+  text-decoration:none; 
+  color:#6f2f9f;
+}
+
+.linha-card{
+  width: 100%;
+  height: 0.1px;
+  background-color: #cccccc;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+@keyframes pulapula {
+        0%   {bottom: 20px;}
+        25%  {bottom: 40px;}
+        50%  {bottom: 20px;}
+        75%  {bottom: 40px;}
+        100% {bottom: 20px;}
+    } 
+
+    .retorna-page-bottom {
+      background-color: #6f2f9f; height: 50px; width: 50px; position: fixed; left: 20px; bottom: 20px; border-radius: 50%; font-size: 28px; box-shadow: 2px 2px 6px rgba(0,0,0,0.4); line-height: 51px; color: #FFF; text-align: center;
+      animation-name: pulapula;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+       -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+    }
+
+    .exclui-page-bottom {
+      background-color: #d9534f; height: 50px; width: 50px; position: fixed; left: 20px; bottom: 20px; border-radius: 50%; font-size: 28px; box-shadow: 2px 2px 6px rgba(0,0,0,0.4); line-height: 51px; color: #FFF; text-align: center;
+      animation-name: pulapula;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+       -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+    }
+
+
+/* Customize the label (the container) */
+.container_checkbox {
+  margin-top: -3px;
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container_checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_checkbox input:checked ~ .checkmark {
+  background-color: #6f2f9f;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container_checkbox .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
