@@ -54,6 +54,10 @@ a.btn-divisor{border-right: 2px solid #604360 !important}
   width: 100%
 }
 
+.ajusta12{
+  margin-top: 5px;
+}
+
 
 .cursor{cursor: move;}
 .color-hugo{color: #6f2f9f !important}

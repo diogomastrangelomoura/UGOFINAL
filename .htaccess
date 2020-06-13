@@ -37,10 +37,19 @@
 	RewriteRule ^perguntas-novo-checklist/(.*)/(.*)?$ views/configuracoes/perguntas-novo-checklist.php?id=$1 [L,QSA]
 	RewriteRule ^edita-checklist/(.*)/(.*)?$ views/configuracoes/config-novo-checklist.php?id=$1 [L,QSA]
 	RewriteRule ^confere-novo-checklist/(.*)/(.*)?$ views/configuracoes/confere-novo-checklist.php?id=$1 [L,QSA]
+	RewriteRule ^confere-checklist-final/(.*)/(.*)?$ views/configuracoes/confere_novo_checklist_final.php?id=$1 [L,QSA]
+	RewriteRule ^config-assinaturas-checklist/(.*)/(.*)?$ views/configuracoes/config-assinaturas-checklist.php?id=$1 [L,QSA]
+	RewriteRule ^config-escolhe-checklist-vinculacao?$ views/configuracoes/config-escolhe-checklist-vinculacao.php [L,QSA]
+
 	
-	RewriteRule ^responde-checklist?$ views/checklist/responde-checklist.php [L,QSA]
+
+
+	RewriteRule ^confere-grupos-checklist/(.*)/(.*)?$ views/configuracoes/confere-grupos-checklist.php?id=$1 [L,QSA]
+	
+	RewriteRule ^responde-checklist/(.*)/(.*)?$ views/checklist/responde-checklist.php?id_checklist=$1 [L,QSA]
+
 	RewriteRule ^verifica-checklist/(.*)?$ views/checklist/verifica-checklist.php?id=$1 [L,QSA]
-	
+	RewriteRule ^escolhe-checklist-inicio?$ views/checklist/escolhe-checklist-inicio.php [L,QSA]
 
 
 	RewriteRule ^lista-checklist/(.*)/(.*)?$ views/checklist/lista-checklist.php?id=$1 [L,QSA]
@@ -61,7 +70,7 @@
 	
 	RewriteRule ^lista-cadastros/(.*)/(.*)?$ views/cadastros/lista-cadastros.php?id=$1 [L,QSA]
 
-  RewriteRule ^cadastros?$ views/cadastros/cadastros.php [L,QSA]
+  	RewriteRule ^cadastros?$ views/cadastros/cadastros.php [L,QSA]
 	RewriteRule ^novo-cadastro/(.*)/(.*)?$ views/cadastros/novo-cadastro.php?id=$1 [L,QSA]
 	RewriteRule ^edita-cadastro/(.*)/(.*)/(.*)/(.*)?$ views/cadastros/novo-cadastro.php?id=$1&id_objeto=$3 [L,QSA]
 	RewriteRule ^ficha-objeto/(.*)/(.*)/(.*)/(.*)?$ views/cadastros/novo-cadastro.php?id=$1&id_objeto=$3&exibicao=1 [L,QSA]
@@ -78,8 +87,7 @@
 
 	RewriteRule ^plano-acao?$ views/planos/plano-acao.php [L,QSA]
 	RewriteRule ^detalhe-plano-acao/(.*)/(.*)?$ views/planos/detalhe-plano-acao.php?id=$1 [L,QSA]
-	RewriteRule ^novo-plano-acao/(.*)/(.*)?$ views/planos/novo-plano-acao.php?id=$1 [L,QSA]
-	RewriteRule ^edita-plano-acao/(.*)/(.*)?$ views/planos/novo-plano-acao.php?id=$1 [L,QSA]
+	RewriteRule ^edita-plano-acao/(.*)/(.*)?$ views/planos/edita-plano-acao.php?id=$1 [L,QSA]
 	
 	
 	RewriteRule ^lista-funcoes?$ views/configuracoes/lista-funcoes.php [L,QSA]

@@ -73,15 +73,15 @@ if(isset($id_objeto)){
 						echo foto_objeto('');
 					}
 				?>
-                	
+        
                 	<?php if(!isset($exibicao)){ ?>
-                    <div class="card-body">
+                    <div class="ajusta12">
                     	<input name="foto_objeto" type="file" class="filestyle" data-input="false" data-buttonname="btn-ugo-border">                    	
                     </div>
                 	<?php } ?>
             </div>
 
-          
+					
 
 		</div>	
 
